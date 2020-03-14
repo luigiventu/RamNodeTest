@@ -6,12 +6,17 @@
                 x +=1;
                 document.getElementById("result").innerHTML=x;
             }
+            function reset(){
+                x = 0;
+                incrementa();
+            }
         </script>
     </head>
     <body>
         <h1>Pagina di prova</h1>
         <div>
             <input type="button" value="Clicca qui" onclick="incrementa()"/>
+            <input type="button" value="Reset" onclick="reset()"/>
         </div>
         <div id="result">
             1
